@@ -1,0 +1,23 @@
+h3{
+    text-align: end;
+}
+h2{
+    text-align: start;
+    text-decoration: underline;
+    text-indent: 10mm;
+    font-size: x-large;
+    font-family: 'Bad Script', cursive;
+}
+p span{
+    font-style: italic;
+}
+p{
+    text-align: end;
+}
+div{
+    font-family: 'Bad Script', cursive;
+    text-indent: 10mm;
+}
+.down{
+    text-align: start;
+}
