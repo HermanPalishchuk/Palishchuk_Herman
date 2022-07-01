@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        .MenuLevel1{ 
+            width: 720px;
+            display: flex;
+            flex-direction: row;
+        }
+        .MenuLevel1 > div{
+            width: 120px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            border: solid 1px rgb(0, 0, 0);
+            background-color: rgb(210, 210, 210);
+            position: relative;
+            cursor: pointer;
+            color: rgb(114, 114, 114);
+            border-radius: 5px;
+        }
+        .MenuLevel2{ 
+            width: 120px; 
+            display: none;
+        }
+        .MenuLevel2 > div{
+            width: 120px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            border: solid 1px rgb(0, 0, 0);
+            background-color: rgb(210, 210, 210);
+            position: relative;
+            cursor: pointer;
+            color: rgb(114, 114, 114);
+            border-radius: 5px;
+        }
+        .MenuLevel1 > div:hover{
+            background-color: rgb(110, 110, 110);
+            color: rgb(140, 140, 140);
+        }
+        .MenuLevel1 > div:hover div.MenuLevel2{
+            display: block; 
+            position: absolute; 
+            top: 101%;
+            left: -1%; 
+            z-index: 1;
+        }
+        
+        
+        @media all and (max-width: 730px){
+            .MenuLevel1{ 
+            width: 720px;
+            display: flex;
+            flex-direction: column;
+        }
+        .MenuLevel1 > div{
+            width: 120px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            border: solid 1px rgb(0, 0, 0);
+            background-color: rgb(210, 210, 210);
+            position: relative;
+            cursor: pointer;
+            color: rgb(114, 114, 114);
+            border-radius: 5px;
+        }
+        .MenuLevel2{ 
+            width: 120px; 
+            display: none; 
+        }
+        .MenuLevel2 > div{
+            width: 120px;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            border: solid 1px rgb(0, 0, 0);
+            background-color: rgb(210, 210, 210);
+            position: relative;
+            cursor: pointer;
+            color: rgb(114, 114, 114);
+            border-radius: 5px;
+        }
+        .MenuLevel1 > div:hover{
+            background-color: rgb(110, 110, 110);
+            color: rgb(140, 140, 140); 
+        }
+        .MenuLevel1 > div:hover div.MenuLevel2{
+            display: block; 
+            position: absolute; 
+            top: -1%;
+            left: 101%; 
+            z-index: 1;
+        }     
+    }
+    </style>
+</head>
+<body>
+
+    <div class="MenuLevel1">
+        <div>
+            Понедельник
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Вторник
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Среда
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Четверг
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Пятница
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Суббота
+            <div class="MenuLevel2">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
