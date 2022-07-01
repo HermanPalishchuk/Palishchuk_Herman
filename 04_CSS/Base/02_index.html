@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            text-align: left;
+            border: dotted 2px rgb(185, 185, 185);
+            width: 600px;
+            height: auto;
+        }
+        tr{
+            border: dotted 2px rgb(185, 185, 185);
+        }
+        td{
+            border: dotted 2px rgb(185, 185, 185);
+        }
+        tr:nth-child(1){
+            text-align: center;
+            font-weight: bold;
+            background-color: grey;
+        }
+        tr:hover{
+            background-color: brown;
+        }
+        tr:nth-child(2n+1):not(:nth-child(1)){
+            background-color: rgb(220, 220, 220);
+        }
+        tr > td:nth-child(1){
+            font-weight: bold;
+        }
+        tr:hover:not(:nth-child(1)){
+            background-color: brown;
+        }
+        /* не понимаю, почему работает свойство :hover, я ведь задал псевдокласс :not */
+        
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>ФИО</td>
+            <td>пол</td>
+            <td>должность</td>
+            <td>дата рож.</td>
+            <td>Данные 01</td>
+            <td>Данные 02</td>
+        </tr>
+        <tr>
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <td>Пупин Фёдор Федорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
